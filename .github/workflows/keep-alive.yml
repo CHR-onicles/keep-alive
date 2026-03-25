@@ -3,6 +3,7 @@ name: Keep Backend Alive
 on:
   schedule:
     - cron: "*/15 * * * *" # every 15 minutes past the hour
+  workflow_dispatch: # To trigger it manually too
 
 jobs:
   ping:
